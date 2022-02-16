@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(children: [
         Row(
-          children: [Image.asset()],
+          children: [Image.asset('assets/images/logo_app.png')],
         )
       ]),
     ));

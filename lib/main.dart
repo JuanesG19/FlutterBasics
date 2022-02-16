@@ -30,9 +30,10 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Uber Clone',
       initialRoute: 'home',
-      routes: {'home': (BuildContext context) => HomePage()},
+      routes: {'home': (BuildContext context) => const HomePage()},
     );
   }
 }

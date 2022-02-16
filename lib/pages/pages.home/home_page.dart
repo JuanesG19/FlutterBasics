@@ -11,7 +11,10 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(children: [
         Row(
-          children: [Image.asset('assets/images/logo_app.png')],
+          children: [
+            Image.asset('assets/images/logo_app.png', width: 140, height: 140),
+            const Text("Rapido Y Furioso")
+          ],
         )
       ]),
     ));

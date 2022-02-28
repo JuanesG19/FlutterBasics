@@ -29,14 +29,21 @@ class HomePage extends StatelessWidget {
                   children: [
                     Image.asset('assets/images/logo_app.png',
                         width: 150, height: 100),
-                    const Text("Rapido Y Facil")
+                    const Text(
+                      'Rapido Y Facil',
+                      style: TextStyle(
+                          fontFamily: 'Pacifico',
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold),
+                    )
                   ],
                 ),
               ),
             ),
             const SizedBox(height: 50),
             const Text("SELECCIONA TU ROL",
-                style: TextStyle(color: Colors.white)),
+                style: TextStyle(
+                    color: Colors.white, fontSize: 20, fontFamily: 'OneDay')),
             const SizedBox(height: 50),
             const CircleAvatar(
               backgroundImage: AssetImage('assets/images/pasajero.png'),
@@ -44,7 +51,8 @@ class HomePage extends StatelessWidget {
               backgroundColor: Colors.grey,
             ),
             const SizedBox(height: 10),
-            const Text("Cliente", style: TextStyle(color: Colors.white)),
+            const Text("Cliente",
+                style: TextStyle(color: Colors.white, fontSize: 16)),
             const SizedBox(height: 30),
             //Parte Conductor
             const CircleAvatar(
@@ -53,10 +61,18 @@ class HomePage extends StatelessWidget {
               backgroundColor: Colors.grey,
             ),
             const SizedBox(height: 10),
-            const Text("Conductor", style: TextStyle(color: Colors.white)),
+            textTypeUser("Conductor"),
           ]),
         ),
       ),
     ));
+  }
+
+  Widget textTypeUser(String typeUser) {
+    return Text(typeUser,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 16,
+        ));
   }
 }

@@ -33,6 +33,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       debugShowCheckedModeBanner: false,
       title: 'Uber Clone',
       initialRoute: 'home',
+      theme: ThemeData(fontFamily: 'NimbusSans'),
       routes: {'home': (BuildContext context) => const HomePage()},
     );
   }
